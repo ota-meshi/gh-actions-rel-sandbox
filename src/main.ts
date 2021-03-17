@@ -34,7 +34,7 @@ async function main(): Promise<boolean> {
     await git(
         "push",
         `https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/ota-meshi/gh-actions-rel-sandbox.git`,
-        "main",
+        "master",
         `v${version}`,
     )
 
