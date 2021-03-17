@@ -27,7 +27,7 @@ async function main(): Promise<boolean> {
     await npm("version", "patch")
 
     const version = JSON.parse(
-        fs.readFileSync(require.resolve("../../package.json"), "utf8"),
+        fs.readFileSync(require.resolve("../package.json"), "utf8"),
     ).version
     // eslint-disable-next-line no-process-env -- ignore
     const { GITHUB_TOKEN } = process.env
