@@ -22,6 +22,7 @@ jobs:
               with:
                   tag_name: v${{ steps.updateSchemastore.outputs.version }}
                   body: Update schema store
+                  commitish: master
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               if: success() && steps.updateSchemastore.outputs.updated == 1
