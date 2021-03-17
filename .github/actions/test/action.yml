@@ -1,0 +1,10 @@
+name: Test
+description: Test
+outputs:
+    updated:
+        description: 1 if there is an update
+    version:
+        description: package new version
+runs:
+    using: node12
+    main: index.js
